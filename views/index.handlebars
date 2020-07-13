@@ -4,13 +4,13 @@
   </div>
   <div class="row justify-content-center">
     <div class="col-6 justify-content-center">
-        <h1>Burgers</h1>
+      <h1>Burgers</h1>
       <ul class="list-group">
         {{#each burgers}}
         {{#unless devoured}}
-       <li class="list-group-item">
+        <li class="list-group-item" id="newBurger">
           {{this.burger_name}}
-          <button class="devoured">Devoured</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="devouredBtn">Devoured</button>
         </li>
         {{/unless}}
         {{/each}}
@@ -23,7 +23,7 @@
 
         {{#each burgers}}
         {{#if devoured}}
-        <li class="list-group-item">
+        <li class="list-group-item" id="newBurger">
           {{this.burger_name}}
         </li>
         {{/if}}
@@ -34,11 +34,9 @@
   <div class="row justify-content-center">
     <div class="col justify-content-center">
       <h2>Add a Burger</h2>
-
       <form class="create-form">
         <div class="form-group">
-          <label for="bn">New Burger Name</label><br>
-          <input type="text" id="bn" name="name">
+          <input type="text" id="bn" name="name" placeholder="New Burger Name">
           <button type="submit">Add</button>
         </div>
       </form>
