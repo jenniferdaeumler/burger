@@ -4,5 +4,6 @@ const router = express.Router();
 
 // Create the `router` for the app, and export the `router` at the end of your file.
 
+//router.get router.post 
 
 module.exports = router;
