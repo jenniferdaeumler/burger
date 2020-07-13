@@ -4,6 +4,8 @@
   {{#unless devoured}}
   <li>
     {{this.burger_name}}
+
+      <button class="devoured">Devoured</button>
   </li>
   {{/unless}}
   {{/each}}
@@ -24,10 +26,11 @@
 </ol>
 
 <h2>Add a Burger</h2>
-<div>
-  <form action="/" method="POST">
-    <textarea type="text" name="burger_name"></textarea>
 
-    <button type="submit">Submit</button>
-  </form>
-</div>
+<form class="create-form">
+  <div class="form-group">
+    <label for="bn">New Burger Name:</label>
+    <input type="text" id="bn" name="name">
+      <button type="submit">Add</button>
+  </div>
+</form>
