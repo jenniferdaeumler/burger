@@ -8,20 +8,20 @@ const orm = {
       cb(result);
     });
   },
-  insertOne: function(table, nameOfCol, valOfCol,cb) {
+  insertOne: function(table, colOne, colTwo, valOne, valTwo,cb) {
     const queryString = "INSERT INTO ?? (?, ?) VALUES (?, ?)";
     console.log(queryString);
-    connection.query(queryString, [table, nameOfCol, valOfCol], function(err, result) {
+    connection.query(queryString, [table, colOne, colTwo, valOne, valTwo], function(err, result) {
       if (err) throw err;
       cb(result);
     });
   },
-  updateOne: function(table, valOfColOne, valOfColTwo,cb) {
+  updateOne: function(table, valOne, valTwo,cb) {
     const queryString =
       "UPDATE ?? SET burger = ? WHERE id = ?";
     connection.query(
       queryString,
-      [table, valOfColOne, valOfColTwo],
+      [table, valOne, valTwo],
       function(err, result) {
         if (err) throw err;
         cb(result);

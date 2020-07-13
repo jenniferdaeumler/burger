@@ -1,10 +1,25 @@
-const orm = require("./config/orm.js");
+const orm = require("../config/orm.js");
 
-//FIX CAPITALIZED 
-orm.selectAll("burgers");
+const burger = {
 
-orm.insertOne("burgers", "burger_name", "devoured", "BURGER_NAME", "DEVOURED");
+selectAll: function(cb) {
+orm.selectAll("burgers", function(res){
+    cb(res);
+});
+},
 
-orm.updateOne("burgers", "BURGER_NAME", "ID");
+insertOne: function(nameOfCol, valOfCol, cb) {
+    orm.insertOne("burgers", nameOfCol, valOfCol, function(res){
+        cb(res);
+    });
+    },
 
-module.exports = burger.js;
+updateOne:function(valOfColOne, valOfColTwo,cb) {
+    orm.updateOne("burgers", valOfColOne, valOfColTwo, function(res){
+        cb(res);
+    });
+    },
+
+};
+
+module.exports = burger;

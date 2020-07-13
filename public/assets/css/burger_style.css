@@ -1,0 +1,56 @@
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
+.card-img{
+    height: 150px;
+    width: 200px;
+}
+
+.col{
+    margin: auto;
+    padding: 20px;
+}
+
+.col-6{
+    text-align: center;
+}
+
+body{
+background-color: #f3d7ba;
+}
+
+li{
+text-align: left;
+border-radius: 5px;
+font-size: 20px;
+}
+
+#newBurger{
+    background-color: #fff1e2;
+}
+
+#oldBurger{
+    background-color: #e0dad4;
+}
+
+#devouredBtn{
+float:right;
+}
+
