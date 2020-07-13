@@ -1,5 +1,6 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
+const connection = require("./config/connection");
 const app = express();
 
 
@@ -15,6 +16,14 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+// app.get("/", function(req, res){
+//   connection.query("SELECT * FROM burgers", function (err, data){
+//     if (err){
+//       return res.status(500).end();
+//     }
+//     res.render("index", {burgers: data});
+//   })
+// });
 
   // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
