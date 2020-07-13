@@ -7,7 +7,7 @@ const burger = require("../models/burger.js")
 //Routers
 //Get route to display all burgers
 router.get("/", function(req, res){
-    burger.all(function(data){
+    burger.selectAll(function(data){
         const hbsObject = {
             burgers: data
         };
@@ -18,12 +18,12 @@ router.get("/", function(req, res){
 
 //Post route to display new burger submitted via form
 router.post("/api/burgers", function(req, res) {
-    burger.create([
+    burger.insertOne([
       "burger_name", "devoured"
     ], [
       req.body.burger_name, req.body.devoured
     ], function(result) {
-      // Send back the ID of the new quote
+      // Send back the ID of the new burger
       res.json({ id: result.insertId });
     });
   });
@@ -34,7 +34,7 @@ router.put("/api/burgers/:id", function(req, res) {
   
     console.log("condition", condition);
   
-    burger.update({
+    burger.updateOne({
       devoured: req.body.devoured
     }, condition, function(result) {
       if (result.changedRows == 0) {

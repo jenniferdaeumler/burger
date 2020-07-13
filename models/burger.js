@@ -1,15 +1,15 @@
 const orm = require("../config/orm.js");
 
 const burger = {
-//FIX CAPITALIZED 
-all: function(cb) {
+
+selectAll: function(cb) {
 orm.selectAll("burgers", function(res){
     cb(res);
 });
 },
 
-insertOne: function(nameOfCol, valOfCal, cb) {
-    orm.insertOne("burgers", nameofCal, valOfCal, function(res){
+insertOne: function(nameOfCol, valOfCol, cb) {
+    orm.insertOne("burgers", nameOfCol, valOfCol, function(res){
         cb(res);
     });
     },
