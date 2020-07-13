@@ -1,5 +1,6 @@
 const connection = require("./connection.js");
 
+
 const orm = {
   selectAll: function(tableInput,cb) {
     const queryString = "SELECT * FROM ??";
@@ -8,17 +9,17 @@ const orm = {
       cb(result);
     });
   },
-  insertOne: function(table, colOne, colTwo, valOne, valTwo,cb) {
-    const queryString = "INSERT INTO ?? (?, ?) VALUES (?, ?)";
+  insertOne: function(table, col, val, cb) {
+    const queryString = "INSERT INTO "+table + " ("+col.toString()+") VALUES (?)";
     console.log(queryString);
-    connection.query(queryString, [table, colOne, colTwo, valOne, valTwo], function(err, result) {
+    connection.query(queryString, val, function(err, result) {
       if (err) throw err;
       cb(result);
     });
   },
   updateOne: function(table, valOne, valTwo,cb) {
     const queryString =
-      "UPDATE ?? SET burger = ? WHERE id = ?";
+      "UPDATE ?? SET (devoured) WHERE id = ?";
     connection.query(
       queryString,
       [table, valOne, valTwo],

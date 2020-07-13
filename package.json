@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jenniferdaeumler/burger.git"
+    "url": "git+https://github.com/jenniferdaeumler/gt-mvc-burger-homework-13"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jenniferdaeumler/burger/issues"
+    "url": "https://github.com/jenniferdaeumler/gt-mvc-burger-homework-13/issues"
   },
-  "homepage": "https://github.com/jenniferdaeumler/burger#readme",
+  "homepage": "https://github.com/jenniferdaeumler/gt-mvc-burger-homework-13/#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.0.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.17.1"
   }
 }
