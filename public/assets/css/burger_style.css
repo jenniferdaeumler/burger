@@ -18,3 +18,30 @@ li {
     margin-bottom: 5px;
   }
   
+.card-img{
+    height: 150px;
+    width: 200px;
+}
+
+.col{
+    margin: auto;
+    padding: 20px;
+}
+
+.col-6{
+    text-align: center;
+}
+
+body{
+background-color: #fcddbc;
+}
+
+li{
+text-align: left;
+border-radius: 5px;
+font-size: 20px;
+}
+
+.devoured{
+float:right;
+}
