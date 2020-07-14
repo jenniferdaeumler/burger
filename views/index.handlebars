@@ -16,7 +16,7 @@
         {{#unless devoured}}
         <li class="list-group-item" id="newBurger">
           {{this.burger_name}}
-          <button type="button" class="btn btn-secondary btn-sm devoured" id="devouredBtn"
+          <button type="button" class="btn btn-success btn-sm devoured" id="devouredBtn"
             data-burgerID="{{this.id}}">Devoured</button>
         </li>
         {{/unless}}
@@ -44,7 +44,7 @@
       <form class="create-form">
         <div class="form-group">
           <input type="text" id="bn" name="burger_name" placeholder="New Burger Name">
-          <button type="submit">Add</button>
+          <button type="submit" class="btn btn-success btn-sm" id="addBtn">Add</button>
         </div>
       </form>
     </div>
