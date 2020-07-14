@@ -25,13 +25,8 @@ Use the Heroku link to display the app in your browser.
 ## Usage
 Type inside the form to submit a new burger.  Click devour button to update database, and move burger to devoured side.  
 
-![Homepage of App](assets/readme.png)
+![App in Use](https://media1.giphy.com/media/jUciu5tULfaZCfKFv7/giphy.gif)
 
-![Note Taking Page](assets/readme2.png)
-
-![Homepage of App](assets/readme3.png)
-
-![Note Taking Page](assets/readme4.png)
 
 ## Credits
 
