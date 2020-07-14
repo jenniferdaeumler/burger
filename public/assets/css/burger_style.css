@@ -34,6 +34,7 @@ li {
 
 body{
 background-color: #f3d7ba;
+margin: 20px;
 }
 
 li{
@@ -52,7 +53,24 @@ font-size: 20px;
 
 #devouredBtn{
 float:right;
+  transition-duration: 0.2s;
 }
+
+#devouredBtn:hover {
+  background-color: #c01010; 
+  border-color: #c01010;
+  color: white;
+}
+
+#addBtn{
+    transition-duration: 0.2s;
+  }
+  
+  #addBtn:hover {
+    background-color: yellow; 
+    border-color: yellow;
+    color: black;
+  }
 
 .title{
   text-align: center;
