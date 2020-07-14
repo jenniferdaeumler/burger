@@ -19,7 +19,7 @@ const orm = {
   },
   updateOne: function(table, valOne, valTwo,cb) {
     const queryString =
-      "UPDATE ?? SET (devoured) WHERE id = ?";
+      "UPDATE ?? SET devoured = ? WHERE id = ?";
     connection.query(
       queryString,
       [table, valOne, valTwo],
