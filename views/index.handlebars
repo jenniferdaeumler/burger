@@ -1,23 +1,30 @@
 <div class="container">
   <div class="row justify-content-center">
+    <div class="col justify-content-center title">
+      <h1>Eat-Da-Burgers!</h1>
+    </div>
+    </div>
+  <div class="row justify-content-center">
     <img src="./assets/img/burger.png" alt="Burger" class="card-img">
+  </div>
   </div>
   <div class="row justify-content-center">
     <div class="col-6 justify-content-center">
-      <h1>Burgers</h1>
+      <h2>Burgers</h2>
       <ul class="list-group">
         {{#each burgers}}
         {{#unless devoured}}
         <li class="list-group-item" id="newBurger">
           {{this.burger_name}}
-          <button type="button" class="btn btn-secondary btn-sm devoured" id="devouredBtn" data-burgerID="{{this.id}}">Devoured</button>
+          <button type="button" class="btn btn-secondary btn-sm devoured" id="devouredBtn"
+            data-burgerID="{{this.id}}">Devoured</button>
         </li>
         {{/unless}}
         {{/each}}
       </ul>
     </div>
     <div class="col-6 justify-content-center">
-      <h1>Devoured Burgers</h1>
+      <h2>Devoured Burgers</h2>
 
       <ol>
 
