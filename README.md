@@ -3,7 +3,7 @@
 ### Overview
 This app is a burger logger utilizing MySQL, Node, Express, Handlebars and a homemade ORM (yum!). MVC design pattern was used. Node and MySQL used to query and route data in the app, and Handlebars to generate your HTML.
 
-# MySQL Homework: Employee Tracker
+# Node Express Handlebars Links
 
 [Link to GitHub Repo](https://github.com/jenniferdaeumler/gt-mvc-burger-homework-13)
 [Link to deployed Heroku site](https://sleepy-anchorage-81195.herokuapp.com/)
